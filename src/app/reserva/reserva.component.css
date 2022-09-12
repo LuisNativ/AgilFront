@@ -1,0 +1,33 @@
+.div-reserva{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 85vw;
+    padding-top: 100px;
+    background-color: #f3f3f3;
+}
+.div-reserva>div{
+    height: 100%;
+    padding: 5rem;
+}
+.fila{
+    text-align: center;
+}
+.fila>div{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+.fila>div:hover{
+    box-shadow: 0 .5rem 1rem rgba(129, 129, 129, 0.705) !important;
+}
+a path{
+    fill: #d50000;
+}

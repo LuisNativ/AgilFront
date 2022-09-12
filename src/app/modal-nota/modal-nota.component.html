@@ -1,0 +1,59 @@
+<div class="modal-header">
+    <h4 class="modal-title"> Registrar Nota </h4>
+    <button type="button" class="close text-white" aria-label="Close" (click)="activeModal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <form [formGroup]="formRegistroNota">
+                <div class="row">
+                    <div class="col-lg-4  form-group">
+                        <label for="tipoBusqueda">Código</label>
+                        <input  class="form-control" 
+                                id="codigo"
+                                formControlName="codigo"
+                                [(ngModel)]="datoModal.codigo"
+                                placeholder="Código">
+                    </div>
+                    <div class="col-lg-4  form-group">
+                        <label for="tipoBusqueda">Nombres</label>
+                        <input  class="form-control" 
+                                id="nombres"
+                                formControlName="nombres"
+                                [(ngModel)]="datoModal.nombres"
+                                placeholder="Nombres" >
+                    </div>
+                    <div class="col-lg-4  form-group">
+                        <label for="tipoBusqueda">Estado</label>
+                        <input  class="form-control" 
+                                id="estado"
+                                formControlName="estado"
+                                [(ngModel)]="datoModal.estado"
+                                placeholder="Estado">
+                    </div>
+                    <div class="col-lg-4  form-group">
+                        <label for="tipoBusqueda">Nota</label>
+                        <input  class="form-control" type="number"
+                                id="nota"
+                                formControlName="nota"
+                                [(ngModel)]="nota"
+                                placeholder="Nota">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" style="width: 90px;" (click)="registrarNota()">   
+        Registrar
+        <i class="fa fa-search pl-2"></i>
+    </button>
+</div>
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" 
+size = "medium" color = "#fff" 
+type = "ball-scale-multiple" 
+[fullScreen] = "true"><p style="color: white" > Cargando ...</p>
+</ngx-spinner>

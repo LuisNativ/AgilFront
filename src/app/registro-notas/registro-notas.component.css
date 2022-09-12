@@ -1,0 +1,21 @@
+.div-alumno{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 85vw;
+    padding-top: 100px;
+    background-color: #f3f3f3;
+}
+
+.card{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 .5rem 1rem rgba(129, 129, 129, 0.705) !important;
+}
+

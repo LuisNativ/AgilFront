@@ -1,0 +1,33 @@
+<div class="div-alumno">
+    <div style="margin: 100px;">
+        <div class="card p-5">
+            <ngx-table
+            [configuration]="configuration"
+            [data]="data"
+            [columns]="columns"
+            (event)="onEvent($event)"
+            >
+            <ng-template let-row>
+              <td>
+                <div class="font-small">{{ row.codigo }}</div>
+              </td>
+              <td>
+                <div class="font-small">{{ row.nombres }}</div>
+              </td>
+              <td>
+                <span class="font-small">{{ row.estado }}</span>
+              </td>
+              <td>
+                <button class="btn btn-primary btn-sm" (click)="showModal(row)">
+                  Registrar Nota
+                </button>
+              </td>
+            </ng-template>
+          </ngx-table>
+
+        
+        </div>
+      
+    </div>
+</div>
+

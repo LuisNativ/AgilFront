@@ -20,7 +20,7 @@
 }
 .fila>div{
     width: 400px;
-    height: 250px;
+    height: 550px;
     border-radius: 10px;
     display: inline-block;
     text-align: left;
@@ -31,3 +31,17 @@
 a path{
     fill: #d50000;
 }
+
+
+/*Fila Sugerencia*/
+.filaSugerencia{
+    text-align: center;
+}
+.filaSugerencia>div{
+    width: 70%;
+    height: 550px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+

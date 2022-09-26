@@ -12,4 +12,25 @@ export class CuentaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  datos=[{
+    'titulo':'Registro de Notas',
+    'url':'/alumno',
+    'icon':'fas fa-clock'
+  },
+  {
+    'titulo':'Toma de asistencia',
+    'url':'/alumno',
+    'icon':'fas fa-clock'
+  },
+  {
+    'titulo':'Reporte de Notas',
+    'url':'/alumno',
+    'icon':'fas fa-clock'
+  },
+  {
+    'titulo':'Horario',
+    'url':'/alumno',
+    'icon':'fas fa-clock'
+  }]
+
 }

@@ -17,6 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReporteNotaComponent } from './reporte-nota/reporte-nota.component';
+import { ReporteAsistenciaComponent } from './reporte-asistencia/reporte-asistencia.component';
 
 const appRoutes:Routes=[
   {path:'',component:CuentaComponent},
@@ -26,6 +28,8 @@ const appRoutes:Routes=[
   {path:'reserva',component:ReservaComponent},
   {path:'reprogramar',component:ReprogramarComponent},
   {path:'notas',component:RegistroNotasComponent},
+  {path:'reporteNota',component:ReporteNotaComponent},
+  {path:'reporteAsistencia',component:ReporteAsistenciaComponent},
 ];
 
 @NgModule({
@@ -38,6 +42,8 @@ const appRoutes:Routes=[
     ReprogramarComponent,
     RegistroNotasComponent,
     ModalNotaComponent,
+    ReporteNotaComponent,
+    ReporteAsistenciaComponent,
   ],
   imports: [
     BrowserAnimationsModule,
